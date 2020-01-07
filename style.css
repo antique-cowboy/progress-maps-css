@@ -1,0 +1,130 @@
+/* -- PROGRESS MAP -- */
+
+:root {
+  --main-color: #a5cee2;
+  --hover-color: #717f80;
+  --main-font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+  --transparent-color: rgba(165,206,226,.9);
+}
+
+
+/* title color */
+.details_container .details_title a {
+	color: var(--main-color)!important;
+}
+/* font */
+.codespacing_progress_map_area *,
+div.cspml_details_container div.cspml_details_title a,
+div.cspml_details_container div.cspml_details_title {
+	font-family: var(--main-font-family)!important;
+}
+/* plus and minus buttons */
+div.cspm_zoom_in_control, div.cspm_zoom_out_control {
+	background-color: var(--transparent-color)!important;
+}
+/* plus and minus button divider line */
+div.cspm_zoom_in_control {
+	border-color: var(--main-color)!important;
+}
+/* changes image icons to be grey instead of light blue */
+img[src*="recenter.png"], /* recenter map button icon */
+img[src*="geoloc.png"], /* geo location button icon */
+img[src*="continents.png"], /* zoom to continents button icon */
+img[src*="loup.png"], /* map search form button icon */
+img[src*="filter.png"], /* faceted search form button icon */
+img[src*="proximities.png"] /* nearby points of interest button icon */ {
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+}
+/* info box loading bar color */
+.blue_cloud {
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+	/* actual color is a box shadow if you want to edit the color, but it was easier to just make grey */
+	/* box-shadow: 6px 0 0 0 rgba(44,172,227,1), 12px 0 0 0 rgba(44,172,227,1), 18px 0 0 0 rgba(44,172,227,1), 24px 0 0 0 rgba(44,172,227,1), 30px 0 0 0 rgba(44,172,227,1), 36px 0 0 0 rgba(44,172,227,1); */
+}
+/* carousel loading spinner color */
+.cspm_spinner {
+	/* easier to just make grey */
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+}
+/* progress bar color */
+#nprogress .bar {
+	background-color: var(--main-color)!important;
+}
+/* map spinner icon color */
+#nprogress .spinner-icon {
+        border-top-color: var(--main-color)!important;
+        border-left-color: var(--main-color)!important;
+}
+/* pulsating ring around pin */
+#pulsating_holder div.dot {
+        border-color: var(--main-color)!important;
+}
+
+/* -- LIST AND FILTER ADDON -- */
+
+/* resize the map button */
+div.cspml_resize_map,
+div.cspml_resize_map:hover /* on hover */ {
+    background: var(--main-color);
+}
+
+/* title font color */
+#cspml_listings_container div.cspml_details_container div.cspml_details_title a,
+#cspml_listings_container div.cspml_details_container div.cspml_details_title {
+	color: var(--hover-color);
+}
+
+/* refine search */
+#cspml_listings_container .cspml_fs_title, /* left side */
+#cspml_listings_container .cspml_close_fs /* right side */ {
+    background: var(--main-color);
+}
+
+img[src*="list.png"] {
+	/* easier to just make grey */
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+/* filter button */
+#cspml_listings_container .cspml_btn {
+    background: var(--main-color);
+}
+
+/* checkbox border color */
+#cspml_listings_container .icr-label .icr-item {
+    border-color: var(--hover-color);
+}
+
+/* checkbox border color */
+#cspml_listings_container .icr-label.checked .icr-item, /* checked */
+#cspml_listings_container .icr-label:hover .icr-item /* hovered */ {
+    border-color: var(--main-color);
+}
+
+/* checkmark color */
+#cspml_listings_container .icr-label.checked .type_checkbox:after,
+#cspml_listings_container .icr-label.checked .type_checkbox:before,
+#cspml_listings_container .icr-label.checked .type_radio:after {
+    background: var(--main-color);
+}
+
+/* pinpoint triangle */
+#cspml_listings_container .cspml_item_pinpoint_triangle {
+    border-right-color: var(--transparent-color)!important;
+}
+
+#cspml_listings_container div.cspml_no_results {
+	color: var(--hover-color);
+}
+
+img[src*="big-cluster.png.png"],
+img[src*="medium-cluster.png"],
+img[src*="small-cluster.png"],
+img[src*="pin-blue.png"] {
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+}
